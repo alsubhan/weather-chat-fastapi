@@ -1,27 +1,8 @@
 #!/bin/bash
 
 echo ""
-echo "Restoring frontend npm packages"
-echo ""
-cd frontend
-npm install
-if [ $? -ne 0 ]; then
-    echo "Failed to restore frontend npm packages"
-    exit $?
-fi
-
-echo ""
-echo "Building frontend"
-echo ""
-npm run build
-
-if [ $? -ne 0 ]; then
-    echo "Failed to build frontend"
-    exit $?
-fi
-
-cd ..
 echo 'Creating Python virtual environment ".venv" in root'
+echo ""
 python3 -m venv .venv
 source .venv/bin/activate
 
@@ -40,3 +21,4 @@ if [ $? -ne 0 ]; then
     echo "Failed to start backend"
     exit $?
 fi
+
