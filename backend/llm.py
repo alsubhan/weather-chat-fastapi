@@ -2,7 +2,7 @@ import json
 import urllib.request
 
 def construct_prompt(weather_data, city):
-  temp = weather_data['main']['temp']
+  temp = round(weather_data['main']['temp'],0)
   desc = weather_data['weather'][0]['description']
 
   # Construct prompt for LLM 

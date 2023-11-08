@@ -43,7 +43,7 @@ async def get_weather(city: str):
     weather_summary = get_generate_summary(prompt, LLM_API_KEY)
         
     return {
-        "temperature": weather_data["main"]["temp"],
+        "temperature": round(weather_data["main"]["temp"],0),
         "description": weather_data["weather"][0]["description"],
         "generation": weather_summary
     }

@@ -10,7 +10,8 @@ function WeatherSummary({weather}) {
 
   return (
     <article>
-      <p><b>Temperature:</b> {weather.temperature}&deg;C</p>
+      <h2><b>{weather.temperature}&deg;C</b></h2>
+      <h3><b>{weather.description}</b></h3>
       {/* other summary data */}
       <p>{summary.split('\n\n').map(p => <p key={p}>{p}</p>)}</p> 
     </article>
