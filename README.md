@@ -2,8 +2,6 @@
 The application will retrieve weather data for a specified city and employ a generative language model to create an amusing summary of the weather, alongside providing suggestions for activities and outfits according to the current weather conditions.
 
 
-Here is the README formatted as a Markdown (.md) file:
-
 # Weather API (Backend)
 
 This is a simple weather API that provides current temperature and weather data for a given city using the OpenWeatherMap API and generates a descriptive response using an LLM API.
