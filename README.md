@@ -2,9 +2,13 @@
 The application will retrieve weather data for a specified city and employ a generative language model to create an amusing summary of the weather, alongside providing suggestions for activities and outfits according to the current weather conditions.
 
 
-# Weather API (Backend)
+# Weather API
 
 This is a simple weather API that provides current temperature and weather data for a given city using the OpenWeatherMap API and generates a descriptive response using an LLM API.
+
+## Backend 
+
+Python FastAPI backend for weather data API.
 
 ## Requirements
 
@@ -89,23 +93,16 @@ Run tests with:
 pytest
 ```
 
-Got it, here are the updates to reflect that the frontend is a React app called "Weather App" running on port 3000:
+
+
 
 # Weather App
 
-## Backend 
-
-Python FastAPI backend for weather data API.
-
-## Frontend
+### Frontend
 
 React frontend application for viewing weather. 
 
-The React app is named "Weather App" and runs on http://localhost:3000.
-
 ## Usage
-
-### Frontend
 
 Run the frontend React app: 
 
