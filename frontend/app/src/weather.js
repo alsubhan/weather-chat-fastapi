@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import axios from 'axios';
 
@@ -10,7 +10,7 @@ function WeatherSummary({weather}) {
 
   return (
     <article>
-      <p><b>Temperature:</b> {weather.temperature}</p>
+      <p><b>Temperature:</b> {weather.temperature}&deg;C</p>
       {/* other summary data */}
       <p>{summary.split('\n\n').map(p => <p key={p}>{p}</p>)}</p> 
     </article>
