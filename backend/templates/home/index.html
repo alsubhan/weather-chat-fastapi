@@ -1,0 +1,46 @@
+{% extends "shared/layout.html" %}
+
+{% block content %}
+    <div class="top-links">
+    <a href="/docs">Docs</a>
+    <a href="http://localhost:3000"> Weather App (React Frontend)</a> 
+    </div>
+    
+    <img src="/static/img/cloud.png" style="float: left; max-width: 100px; margin-right: 20px;" alt="">
+
+    <h1><span class="font-semi-bold">Weather API</span> <span class="smaller">Backend</span>
+    </h1>
+
+    <div style="clear:both;"></div>
+    <br>
+    <br>
+    <p class="lead">
+        <strong>Endpoints</strong>
+    <ul>
+        <li>
+            <strong>Get current weather in a given city</strong><br>
+            <a href="/weather/dubai"
+               target="_blank"
+            ><strong>GET /weather/{city}</strong></a><br>
+            <br>
+            <div style="font-size: 12px;">
+                <strong>Parameters</strong>
+                <ul>
+                    <li><strong>Required</strong>: <code>city={city}</code> - The exact city name from any country.
+                    </li>
+                    <li>Optional: <code>units={units}</code> - units: {metric, imperial, standard}, defaults to metric.
+                    </li>
+                </ul>
+
+                <strong>JSON Response</strong>
+                <ul>
+                    <li>Click the link above to see sample output.
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+    </p>
+    </div>
+
+{% endblock %}

@@ -13,7 +13,23 @@ Python FastAPI backend for weather data API.
 ## Requirements
 
 - Python 3.10+
-- Required Python packages are listed in requirements.txt
+- Required Python packages are listed in requirements.txt and requirements-dev.txt
+
+### Production
+- fastapi
+- uvicorn
+- python-dotenv
+- requests
+- urllib3
+- jinja2
+
+### Development
+- pytest
+- pytest-xdist
+- coverage
+- black
+- pytest-timeout
+- pytest-env
 
 ## Usage
 
@@ -40,6 +56,8 @@ This will:
 
 The application will then be accessible at http://localhost:8000
 
+![Alt text](backend/static/img/backend.png)
+
 ## Running manually
 
 You can also run the application manually:
@@ -47,7 +65,7 @@ You can also run the application manually:
 1. Create and activate virtualenv
 
 ```bash
-python3 -m venv .venv
+python -m venv .venv
 source .venv/bin/activate
 ```
 
@@ -64,6 +82,8 @@ uvicorn main:app --reload
 ```
 
 ## API Reference
+
+Please refer to the full documentation tree via [127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
 ### Get weather
 
@@ -90,9 +110,8 @@ Response:
 Run tests with:
 
 ```bash  
-pytest
+pytest -v -s
 ```
-
 
 
 
@@ -114,7 +133,7 @@ This will start the Weather App on http://localhost:3000.
 
 The React app makes requests to the backend WEATHER API for weather data.
 
-### Weather App Screenshot
+### Weather App
 ![Alt text](frontend/screenshot.png)
 
 ## Running Manually
