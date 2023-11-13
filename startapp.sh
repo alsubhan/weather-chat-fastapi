@@ -5,6 +5,7 @@ echo ""
 echo "Restoring frontend npm packages"
 echo ""
 
+
 npm install
 if [ $? -ne 0 ]; then
     echo "Failed to restore frontend npm packages"
